@@ -1,0 +1,9 @@
+url:
+  php:
+    connecta: https://service-connecta-php.connectacare.com.br
+  services:
+    authentication: https://service-authentication.connectacare.com.br
+    homeCare: https://service-homecare.connectacare.com.br
+    planoSaude: https://service-plano-saude.connectacare.com.br
+    paciente: https://service-paciente.connectacare.com.br
+    connecta: https://service-connecta.connectacare.com.br

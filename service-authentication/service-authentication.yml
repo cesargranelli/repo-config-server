@@ -1,0 +1,22 @@
+security:
+  configs:
+    sign-up-url: "/usuarios"
+    key: "q3t6w9z$C&F)J@NcQfTjWnZr4u7x!A%D*G-KaPdSgUkXp2s5v8y/B?E(H+MbQeTh"
+    expiration-time: 1800000 #Milisegundos
+
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework: INFO
+      hibernate: INFO

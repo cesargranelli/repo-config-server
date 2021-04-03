@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:mysql://db-connecta.cynh1jlres6n.us-east-2.rds.amazonaws.com:3306/connecta?serverTimezone=UTC
+    username: connecta
+    password: c0nn3ct4
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  mail:
+    host: email-smtp.us-east-2.amazonaws.com
+    port: 587
+    username: AKIA4UCJHAJ5L67OI2HR
+    password: BO0bZ0j0d7eA6kAXfZdQqQCsNa5FsigjWqbgVCIGqsoS
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+          required: true

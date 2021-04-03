@@ -1,0 +1,9 @@
+url:
+  php:
+    connecta: http://service-connecta-php-env-stg.eba-egpqxfgc.us-east-2.elasticbeanstalk.com
+  services:
+    authentication: http://service-authentication-env-stg.us-east-2.elasticbeanstalk.com
+    homeCare: http://service-homecare-env-stg.us-east-2.elasticbeanstalk.com
+    planoSaude: http://service-plano-saude-env-stg.us-east-2.elasticbeanstalk.com
+    paciente: http://service-paciente-env-stg.us-east-2.elasticbeanstalk.com
+    connecta: http://service-connecta-env-stg.us-east-2.elasticbeanstalk.com
