@@ -1,1 +1,50 @@
+connecta:
+  config:
+    timezone: America/Sao_Paulo
 
+database:
+  host:
+    dev: jdbc:mysql://db-connecta-dev.cynh1jlres6n.us-east-2.rds.amazonaws.com:3306
+    prd: jdbc:mysql://db-connecta-prd.cynh1jlres6n.us-east-2.rds.amazonaws.com:3306
+
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        jdbc:
+          time_zone: ${connecta.config.timezone}
+
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework: INFO
+      zalando:
+        logbook: TRACE
+
+logbook:
+  exclude:
+    - /actuator/health
+  filter.enabled: true
+  format.style: json
+  obfuscate:
+    headers:
+      - Authorization
+      - X-Secret
+    parameters:
+      - access_token
+      - password
+      - senha
+    properties: "foto, fotoRg, fotoComprovante, fotoCpf, fotoCtps, fotoProfissional, fotoRgFrente, fotoRgVerso,
+        fotoAssinatura, comprovante, fotoCNHFrente, fotoCNHVerso, assinatura, fotos"
+  write:
+    chunk-size: 1000
